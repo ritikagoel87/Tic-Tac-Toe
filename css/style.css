@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background-image: linear-gradient(rgba(255, 0, 0, 1), rgba(255, 0, 0, 0)); */
+}
+
+.wrapper {
+  background-image: url('../images/background.jpg');
+  background-repeat: x-repeat;
+  opacity: 0.1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.container {
+  opacity: 1;
+  z-index: 9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+header, main {
+  text-align: center;
+  margin-bottom: 48.5px;
+}
+
+header {
+  background-color: #ccc;
+}
+
+header h1 {
+    font-size: 40px;
+    padding: 25px;
+    margin: 0 ;
+    color: #ed143d;
+}
+
+.about {
+    margin-bottom: 20px;
+}
+
+#about-content {
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+  font-size: 20px;
+  color: #00008b;
+}
+
+.rows {
+  margin: 0 0 5px;
+}
+
+.cols {
+  height: 100px;
+  width: 100px;
+  font-size: 80px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+  vertical-align: top;
+}
+
+#col-1 {
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+#col-2 {
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+#col-3 {
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+#col-4 {
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+#col-5 {
+  border: 5px solid black;
+}
+
+#col-6 {
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+#col-7 {
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+}
+
+#col-8 {
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+}
+
+#col-9 {
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+}
+
+#result {
+  margin-top: 30px;
+  border: 3px solid #f00;
+  padding: 10px;
+}
+
+#result-head {
+  font-size: 25px;
+  color: #006400;
+}
+
+#result-output {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  color: transparent;
+  font-size: 30px;
+  width: fit-content;
+  margin: 0 auto;
+  -webkit-background-clip: text;
+  height: 60px;
+}
+
+#winner {
+  font-size: 50px;
+}
+
+footer {
+  background-color: #ccc;
+  margin: 20px 0 0;
+  font-size: 20px;
+}
+
+.social, .copy {
+    display: inline-block;
+    width: 49%;
+}
+
+.social div {
+  display: inline-block;
+}
+
+.social div img {
+  vertical-align: middle;
+}
+
+.copy {
+  text-align: right;
+}
+
+#c-name {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  color: transparent;
+  font-size: 30px;
+  -webkit-background-clip: text;
+}
