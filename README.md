@@ -89,6 +89,7 @@ Credits ❤️
 In order to be able to complete this Project, following people were the most helpful:
   Joel Turnbull - My Instructor, for teaching us how to do stuff and do it the better way!
   Yianni Moustakas - My Teaching Assistant, for managing everything for us and being a Go-To person for all our code related issues and the rest.
+  Sonia Parker - My mentor, for being there for me when I need and being a constant source of motivation!
   Nick Dahiya - My husband, to help me through the code with bombarding me with ideas and helping me out when I'm stuck!
   SEI31 - My classmates, to give me ideas for my project when they asked questions in the class and lighten us up when the situations got tense!
   Mom, Dad, Bro and Sister-In-Law - My family, who have been a constant support with the households and my daughter while I'm away to do what I NEED to do.
