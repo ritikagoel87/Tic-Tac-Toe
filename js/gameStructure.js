@@ -2,6 +2,12 @@ const gameStructure = {
   lastTurn: '',
   win: false,
   winner: '',
+
+  winnerStats: {
+    x: 0,
+    o: 0
+  },
+
   checkWin: {
     win1: ['col1', 'col2', 'col3'],
     win2: ['col4', 'col5', 'col6'],
@@ -12,6 +18,7 @@ const gameStructure = {
     win7: ['col1', 'col5', 'col9'],
     win8: ['col3', 'col5', 'col7'],
   },
+
   users: ['x', 'o'],
   userX: [],
   userO: [],
@@ -34,18 +41,38 @@ const gameStructure = {
     }
   },
 
+  resetGame: function () {
+    this.lastTurn = '';
+    this.win = false;
+    this.winner = '';
+
+    this.userX = [];
+    this.userO = [];
+
+    for ( row in this.structure ) {
+      for ( col in this.structure[row] ) {
+        this.structure[row][col] = '';
+      }
+    }
+  },
+
   checkProgress: function ( user ) {
     if( !this.win ) {
+      let totalTurns = this.userX.length + this.userO.length;
       if ( this[user].length >= 3 ) {
         for ( key in this.checkWin ) {
           if( this.checkWin[ key ].every(val => this[user].includes(val))) {
             this.win = true;
             this.winner = user.slice(-1).toLowerCase();
+            this.winnerStats[`${ user.slice(-1).toLowerCase() }`] += 1;
           }
         }
       }
       if( this.win ) {
         return this.winner;
+      } else if( totalTurns >= 9 && !this.win ) {
+        this.win = true;
+        this.winner = 'draw';
       }
     }
   },
@@ -64,7 +91,7 @@ const gameStructure = {
           currentRow[ colNumber ] = this.lastTurn;
           let userArray = `user${ this.lastTurn.toUpperCase() }`;
           this[userArray].push( colNumber );
-          $(`#${ place }`).text(`${ this.lastTurn }`);
+          // $(`#${ place }`).text(`${ this.lastTurn }`);
           this.checkProgress( userArray );
         }
       }
