@@ -10,36 +10,52 @@
 </head>
 <body>
 
+  <!-- Where the background image lies -->
   <div class="wrapper"></div>
+
+  <!-- Where the visible content on the page lies -->
   <div class="container">
 
+    <!-- Main heading -->
     <header>
       <h1>TIC-TAC-TOE</h1>
     </header>
 
+    <!-- The main content where everything is happening -->
     <main>
+      <!-- Description of the game -->
       <div class="about">
         <div id="about-content">Tic-tac-toe (American English), noughts and crosses (British English) or Xs and Os, is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game. X starts first!</div>
       </div>
+      <!-- The main game board -->
       <div class="game">
+        <!-- First Row -->
         <div id="row-1" class="rows">
+          <!-- Columns in Row 1 -->
           <div id="col-1" class="cols"></div>
           <div id="col-2" class="cols"></div>
           <div id="col-3" class="cols"></div>
         </div>
+        <!-- Second Row -->
         <div id="row-2" class="rows">
+          <!-- Columns in Row 2 -->
           <div id="col-4" class="cols"></div>
           <div id="col-5" class="cols"></div>
           <div id="col-6" class="cols"></div>
         </div>
+        <!-- Third Row -->
         <div id="row-3" class="rows">
+          <!-- Columns in Row 3 -->
           <div id="col-7" class="cols"></div>
           <div id="col-8" class="cols"></div>
           <div id="col-9" class="cols"></div>
         </div>
       </div>
+
+      <!-- Other options for the players -->
       <div class="options">
         <div class="player-options">
+          <!-- Options for Player 1 -->
           <p>Player 1</p>
           <select id="player1-list">
             <option value="x" selected>X</option>
@@ -54,10 +70,12 @@
             <option value="star">Star</option>
           </select>
         </div>
+        <!-- Button to let the players re-play the game -->
         <div class="reset">
           <div id="reset-button">REPLAY</div>
         </div>
         <div class="player-options">
+          <!-- Options for Player 2 -->
           <p>Player 2</p>
           <select id="player2-list">
             <option value="x">X</option>
@@ -73,14 +91,20 @@
           </select>
         </div>
       </div>
+
+      <!-- The results of the game -->
       <div id="result">
+        <!-- Results heading -->
         <div id="result-head">OUTCOME</div>
+        <!-- Output from the current game -->
         <div id="result-output"></div>
+        <!-- Scores from the games played so far -->
         <div id="result-stats"></div>
       </div>
     </main>
 
     <footer>
+      <!-- List of social icons to connect with the developer -->
       <div class="social">
         <div class="twitter">
           <a href="https://twitter.com/ritika_goel_chd" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
@@ -98,6 +122,7 @@
           <a href="https://github.com/ritikagoel87" target="_blank"><img src="images/github.png" alt="GitHub"></a>
         </div>
       </div>
+      <!-- Copyright statement -->
       <div class="copy">Copyright © <span id="c-name">Ritika Goel</span> ❤️</div>
     </footer>
   </div>
