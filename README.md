@@ -9,7 +9,7 @@ Tic-tac-toe (American English), noughts and crosses (British English) or Xs and 
 
 Live Game Link
 --------------
-https://ritikagoel87.github.io/Tic-Tac-Toe/
+[Tic-Tac-Toe](https://ritikagoel87.github.io/Tic-Tac-Toe/)
 
 
 Screenshots
