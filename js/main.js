@@ -29,7 +29,7 @@ const displayStats = function () {
   }
   $('#result-stats').html('Scores so far: ');
   $('#result-stats').append(`Player 1 = "${ localStorage.getItem('tTT1') }" and Player 2 = "${ localStorage.getItem('tTT2') }"`);
-  $('#result-stats').append(' - <span id="reset-scores"> Reset Scores</span>');
+  $('#result-stats').append('  <span id="reset-scores"> Reset Scores</span>');
 };
 
 // Stuff that happens when DOM is ready

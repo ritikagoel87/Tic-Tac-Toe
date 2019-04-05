@@ -73,6 +73,7 @@ List Of Any Known Bugs
 ----------------------
 Following bugs are known to exist in the code and are currently being looked into:
   - If one of the player tries to select the same token as the other player, the token for the later changes to the player number by default.
+  - Not fully responsive yet
 
 
 

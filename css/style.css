@@ -182,7 +182,7 @@ header h1 {
 
 #reset-button:hover {
   color: #000;
-  border: 1px solid#f00;
+  border: 1px solid #f00;
   background-color: #ffff00;
 }
 
@@ -211,6 +211,20 @@ header h1 {
   background-image: linear-gradient(to left, blue, green);
   color: transparent;
   -webkit-background-clip: text;
+}
+
+#reset-scores {
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #f00;
+  color: #fff;
+}
+
+#reset-scores:hover {
+  color: #000;
+  border: 1px solid #f00;
+  background-color: #ffff00;
 }
 
 #winner {
